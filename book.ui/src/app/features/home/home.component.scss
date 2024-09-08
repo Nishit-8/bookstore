@@ -1,0 +1,18 @@
+.showslide {
+    width: 1092px;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    z-index: 999;
+    opacity: 1;
+}
+
+.hideslide {
+    transition: opacity 500ms;
+    width: 1092px;
+    position: relative;
+    left: -1092px;
+    top: 0px;
+    z-index: 998;
+    opacity: 0;
+}

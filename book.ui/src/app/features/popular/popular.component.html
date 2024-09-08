@@ -1,0 +1,32 @@
+<section id="popular-books" class="bookshelf py-5 my-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+
+                <div class="section-header align-center">
+                    <div class="title">
+                        <span>Some quality items</span>
+                    </div>
+                    <h2 class="section-title">Popular Books</h2>
+                </div>
+
+                <ul class="tabs">
+                    <li data-tab-target="#all-genre" class="tab" (click)="onGenreChange('All Genre')"
+                        [class.active]="currentTab == 'All Genre'">All Genre</li>
+                    <li data-tab-target="#business" class="tab" (click)="onGenreChange('Business')"
+                        [class.active]="currentTab == 'Business'">Business</li>
+                    <li data-tab-target="#technology" class="tab" (click)="onGenreChange('Technology')"
+                        [class.active]="currentTab == 'Technology'">Technology</li>
+                    <li data-tab-target="#romantic" class="tab" (click)="onGenreChange('Romantic')"
+                        [class.active]="currentTab == 'Romantic'">Romantic</li>
+                    <li data-tab-target="#adventure" class="tab" (click)="onGenreChange('Adventure')"
+                        [class.active]="currentTab == 'Adventure'">Adventure</li>
+                    <li data-tab-target="#fictional" class="tab" (click)="onGenreChange('Fictional')"
+                        [class.active]="currentTab == 'Fictional'">Fictional</li>
+                </ul>
+            </div>
+
+        </div>
+        <app-products></app-products>
+    </div>
+</section>
